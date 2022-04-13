@@ -1,0 +1,32 @@
+ .name{
+    font-family: 'Bad Script', cursive;
+    font-size: 29px;
+    margin-left: 3%;
+    margin-top: 4vh;
+    margin-bottom: -1.5%;
+    display:flex;
+    justify-content: center;
+ }
+ ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+  }
+  li{
+    font-size: 115%;
+    display:inline-block;
+    display:inline; /*IE7*/
+    margin: 4vh;
+  }
+  li:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    text-decoration: underline;
+  }
+  a{
+    font-family: 'Josefin Sans', sans-serif;
+    
+    text-decoration: none;
+  }
+
+  

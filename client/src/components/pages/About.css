@@ -1,0 +1,33 @@
+
+ 
+ img {
+    margin-left: 35vh;
+    height: 690px;
+    width: 560px;
+    float: left;
+}
+p{  
+    text-align:center;
+    white-space:pre-wrap;
+    margin-left: 120vh;
+    margin-right: 30vh;
+}
+.content{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 5vh;
+}
+@media (max-width: 650px) {
+  body {
+    display: block;
+    font-size: 80%;
+  }
+  p {
+    position: relative;
+    margin: -3rem 0 2rem 1rem;
+    padding: 1rem;
+    background: rgba(white, 0.8);
+  }
+}
