@@ -19,6 +19,7 @@ function ImgPortrait() {
         return (
           <div>
             <img src={img.url} />
+            {img.title}
           </div>
         );
       })}

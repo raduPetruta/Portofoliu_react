@@ -12,6 +12,10 @@ p{
     margin-left: 120vh;
     margin-right: 30vh;
 }
+i{
+  font-size: 5vh;
+  margin-right: 6vh;
+}
 .content{
     display: inline;
     justify-content: space-between;
@@ -29,5 +33,10 @@ p{
     margin: -3rem 0 2rem 1rem;
     padding: 1rem;
     background: rgba(white, 0.8);
+  }
+  img {
+    position: relative;
+    margin: -3rem -2rem 2rem -2rem;
+    padding: 1rem;
   }
 }

@@ -1,4 +1,5 @@
 import "./About.css";
+import { Link } from "react-router-dom";
 function About() {
   return (
     <div className="aboutMain">
@@ -41,6 +42,23 @@ function About() {
           vitae voluptate asperiores, vel ipsa laboriosam odit esse beatae
           nesciunt architecto deserunt. Lorem ipsum dolor sit, amet consectetur
         </p>
+      </div>
+      <div className="social">
+        <span>
+          <a href="https://www.instagram.com/instaadaisy/">
+            <i class="fa-brands fa-instagram"> </i>{" "}
+          </a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com/daria.radu.923">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com/daria.radu.923">
+            <i class="fa-brands fa-tumblr"></i>
+          </a>
+        </span>
       </div>
     </div>
   );

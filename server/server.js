@@ -4,11 +4,15 @@ const mongoose = require("mongoose");
 const imgModel = require("./models/imgModel");
 const cors = require("cors");
 
+const envConfig = require("../client/src/components/env.json");
+const mongoURL = envConfig.MONGO_DB_URL;
+
 app.use(cors());
 app.use(express.json());
 
 mongoose.connect(
-  "mongodb+srv://radupetruta:Ff19432011@cluster0.bnfg4.mongodb.net/poze?retryWrites=true&w=majority"
+  //"mongodb+srv://radupetruta:Ff19432011@cluster0.bnfg4.mongodb.net/poze?retryWrites=true&w=majority"
+  `${mongoURL}`
 );
 
 app.get("/images", (req, res) => {

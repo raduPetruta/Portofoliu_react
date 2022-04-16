@@ -2,10 +2,12 @@ import { useState } from "react";
 import { send } from "emailjs-com";
 import "./Contact.css";
 
+const envConfig = require("../env.json");
+
 function Contact() {
-  const userID = "up-c5SlPse__orJbh";
-  const serviceID = "service_7lhq38h";
-  const templateID = "template_56uac8k";
+  const REACT_APP_USER_ID = envConfig.USER_ID;
+  const REACT_APP_SERVICE_ID = envConfig.SERVICE_ID;
+  const REACT_APP_TEMPLATE_ID = envConfig.TEMPLATE_ID;
 
   const [toSend, setToSend] = useState({
     from_name: "",
@@ -14,7 +16,7 @@ function Contact() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_7lhq38h", "template_56uac8k", toSend, "up-c5SlPse__orJbh")
+    send(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, toSend, REACT_APP_USER_ID)
       .then((response) => {
         console.log("Succes!", response.status, response.text);
       })
@@ -31,6 +33,7 @@ function Contact() {
 
   return (
     <div>
+      <div>{name}</div>
       <div>Contact me!</div>
 
       <form onSubmit={onSubmit}>
