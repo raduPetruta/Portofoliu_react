@@ -1,3 +1,4 @@
 node_modules
 node_modules
 client/src/components/env.json
+client/db.json
