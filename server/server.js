@@ -10,10 +10,7 @@ const mongoURL = envConfig.MONGO_DB_URL;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(
-  //"mongodb+srv://radupetruta:Ff19432011@cluster0.bnfg4.mongodb.net/poze?retryWrites=true&w=majority"
-  `${mongoURL}`
-);
+mongoose.connect(`${mongoURL}`);
 
 app.get("/images", (req, res) => {
   imgModel.find({ type: "main" }, (err, result) => {
