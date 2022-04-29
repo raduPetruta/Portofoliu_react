@@ -1,11 +1,42 @@
 img{
-    width: 470px;
-    height: 590px;
-    margin-bottom: 3.5vh;
+    width: 490px;
+    height: 655px;
+    margin-bottom: 5vh;
     margin-left: 8.5vh;
 }
-     
-.imgMap{ 
-  float: left;
-  padding-right: 8.55vh;
+ 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+
+ @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+img:hover{
+  cursor: pointer;
+  transform:scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+  transform:scale(1.1); /*Mozilla scale version*/
+  transform:scale(1.1); /*Opera scale version*/
+  box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+  -webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+  -moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
+
+  }
+  

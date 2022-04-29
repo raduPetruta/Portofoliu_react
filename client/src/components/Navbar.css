@@ -1,7 +1,7 @@
  .name{
     font-family: 'Bad Script', cursive;
     font-size: 29px;
-    margin-left: 3%;
+    margin-left: 1.5%;
     margin-top: 4vh;
     margin-bottom: -1.5%;
     display:flex;
@@ -13,12 +13,14 @@
     justify-content: center;
   }
   li{
-    font-size: 115%;
+    text-decoration: none;
+    font-size: 155%;
     display:inline-block;
     display:inline; /*IE7*/
     margin: 4vh;
   }
   li:hover{
+  
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
     text-decoration: underline;

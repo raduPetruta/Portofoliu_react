@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Axios from "axios";
+import "../ImgList.css";
 
 function ImgStreet() {
   const [imagesStreet, setImageStreet] = useState([]);
@@ -20,14 +21,15 @@ function ImgStreet() {
 
   return (
     <div>
-      street
-      {imagesStreet.map((img) => {
-        return (
-          <div>
-            <img src={img.url} />
-          </div>
-        );
-      })}
+      <div className="row">
+        {imagesStreet.map((img) => {
+          return (
+            <div className="imgMap">
+              <img src={img.url} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

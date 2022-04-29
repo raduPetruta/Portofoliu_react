@@ -32,27 +32,32 @@ function Contact() {
   };
 
   return (
-    <div>
-      <div>{name}</div>
-      <div>Contact me!</div>
+    <div className="container">
+      <div className="textContact">Contact me via E-mail!</div>
 
       <form onSubmit={onSubmit}>
-        <input
-          type="text"
-          name="from_name"
-          placeholder="Your Name.."
-          value={toSend.from_name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="message"
-          placeholder="Your message...."
-          value={toSend.message}
-          onChange={handleChange}
-        />
+        <div>
+          <input
+            className="nameInput"
+            type="text"
+            name="from_name"
+            placeholder="Your Name.."
+            value={toSend.from_name}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <input
+            className="message"
+            type="text"
+            name="message"
+            placeholder="Your message...."
+            value={toSend.message}
+            onChange={handleChange}
+          />
+        </div>
 
-        <button type="submit" onClick={displayMessage}>
+        <button className="btn" type="submit" onClick={displayMessage}>
           Submit!
         </button>
       </form>
